@@ -1,0 +1,19 @@
+{
+  "name": "PocketMineJs",
+  "version": "0.0.1",
+  "description": "Port of PocketMine to NodeJs",
+  "main": "pocketmine.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edotassi/PocketMineJs-MP"
+  },
+  "author": "edotassi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edotassi/PocketMineJs-MP/issues"
+  },
+  "homepage": "https://github.com/edotassi/PocketMineJs-MP"
+}
