@@ -6,7 +6,6 @@ var PocketMine;
 (function (PocketMine) {
     var Math;
     (function (Math) {
-        var VECTOR3_SIDE;
         (function (VECTOR3_SIDE) {
             VECTOR3_SIDE[VECTOR3_SIDE["DOWN"] = 0] = "DOWN";
             VECTOR3_SIDE[VECTOR3_SIDE["UP"] = 1] = "UP";
@@ -14,7 +13,8 @@ var PocketMine;
             VECTOR3_SIDE[VECTOR3_SIDE["SOUTH"] = 3] = "SOUTH";
             VECTOR3_SIDE[VECTOR3_SIDE["WEST"] = 4] = "WEST";
             VECTOR3_SIDE[VECTOR3_SIDE["EAST"] = 5] = "EAST";
-        })(VECTOR3_SIDE || (VECTOR3_SIDE = {}));
+        })(Math.VECTOR3_SIDE || (Math.VECTOR3_SIDE = {}));
+        var VECTOR3_SIDE = Math.VECTOR3_SIDE;
         var Vector3 = (function () {
             function Vector3(x, y, z) {
                 if (x === void 0) { x = 0; }
@@ -328,5 +328,6 @@ var PocketMine;
             };
             return Vector3;
         })();
+        Math.Vector3 = Vector3;
     })(Math = PocketMine.Math || (PocketMine.Math = {}));
 })(PocketMine || (PocketMine = {}));

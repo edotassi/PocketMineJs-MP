@@ -6,4 +6,3 @@ var LevelException = (function () {
     }
     return LevelException;
 })();
-//# sourceMappingURL=LevelException.js.map

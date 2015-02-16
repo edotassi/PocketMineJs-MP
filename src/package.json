@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/edotassi/PocketMineJs-MP/issues"
   },
-  "homepage": "https://github.com/edotassi/PocketMineJs-MP"
+  "homepage": "https://github.com/edotassi/PocketMineJs-MP",
+  "dependencies": {
+    "buffertools": "^2.1.2",
+    "typescript-require": "^0.2.8"
+  }
 }

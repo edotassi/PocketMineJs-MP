@@ -27,7 +27,6 @@ module RakLib {
             return this.os.endianness() == 'BE' ? this.BIG_ENDIAN : this.LITTLE_ENDIAN;
         }
 
-        private static bufferPack:BufferPack = require('bufferpack');
         private static os = require('os');
         private static bufferTools = require('buffertools');
 
