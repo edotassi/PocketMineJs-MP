@@ -18,6 +18,7 @@
   "homepage": "https://github.com/edotassi/PocketMineJs-MP",
   "dependencies": {
     "buffertools": "^2.1.2",
+    "node-gameloop": "^0.1.0",
     "typescript-require": "^0.2.8"
   }
 }

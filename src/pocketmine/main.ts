@@ -2,23 +2,26 @@
  * Created by edoardo on 13/02/2015.
  */
 
+/// <reference path="raklib/server/UDPServerSocket.ts"/>
+
 console.log("Starting");
+console.log(__dirname);
 
-//import server = require("raklib/server/UDPServerSocket");
-//var s = new server.RakLib.Server.UdpServerSocket(null, null);
 
+
+var s = new udpServer.UdpServerSocket(packetReceived, null);
 console.log("Server started");
 
-setTimeout(() => {
-    //s.close();
-    console.log("Timeout ended");
-}, 15000);
+var gameloop = require("node-gameloop");
 
-export module Hello {
-    export class World {
-        constructor() {
-            console.log("Hello wordl!!");
-        }
-    }
+// start the loop at 30 fps (1000/30ms per frame) and grab its id 
+var frameCount = 0;
+var id = gameloop.setGameLoop((delta) => {
+    // `delta` is the delta time from the last frame 
+    process.title = 'PocketMineJs! (frame=' + frameCount++ + 's, delta=' + delta + ')';
+}, 1000 / 30);
+
+
+function packetReceived(buffer: Buffer, info: any):void {
+    
 }
-

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{13810e00-4316-4e5a-8e67-f86f190422fe}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ProjectFiles</ProjectView>
+    <StartupFile>pocketmine\main.ts</StartupFile>
+    <WorkingDirectory>D:\Sorgenti\PocketMineJs-MP\src\pocketmine</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
+    <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
+    <EnableTypeScript>true</EnableTypeScript>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <StartWebBrowser>False</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="tsd.json" />
+    <TypeScriptCompile Include="pocketmine\main.ts" />
+    <TypeScriptCompile Include="pocketmine\command\Command.ts" />
+    <TypeScriptCompile Include="pocketmine\command\CommandSender.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\ACK.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\AcknowledgePacket.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\ADVERTISE_SYSTEM.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\CLIENT_CONNECT_DataPacket.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\CLIENT_DISCONNECT_DataPacket.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\CLIENT_HANDSHAKE_DataPacket.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\DataPacket.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\DATA_PACKET_0.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\DATA_PACKET_1.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\DATA_PACKET_2.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\DATA_PACKET_3.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\DATA_PACKET_4.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\DATA_PACKET_5.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\DATA_PACKET_6.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\DATA_PACKET_7.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\DATA_PACKET_8.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\DATA_PACKET_9.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\DATA_PACKET_A.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\DATA_PACKET_B.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\EncapsulatedPacket.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\Packet.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\UNCONNECTED_PONG.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\server\RakLibServer.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\server\ServerHandler.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\server\SessionManager.ts" />
+    <TypeScriptCompile Include="typings\misc.d.ts" />
+    <TypeScriptCompile Include="typings\tsd.d.ts" />
+    <TypeScriptCompile Include="pocketmine\command\CommandExecutor.ts" />
+    <TypeScriptCompile Include="pocketmine\level\Level.ts" />
+    <TypeScriptCompile Include="pocketmine\level\Position.ts" />
+    <TypeScriptCompile Include="pocketmine\math\Vector3.ts" />
+    <TypeScriptCompile Include="pocketmine\permission\Permissible.ts" />
+    <TypeScriptCompile Include="pocketmine\permission\PermissionAttachment.ts" />
+    <TypeScriptCompile Include="pocketmine\permission\ServerOperator.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\Binary.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\RakLib.ts" />
+    <TypeScriptCompile Include="pocketmine\spl\ThreadedLogger.ts" />
+    <TypeScriptCompile Include="pocketmine\utils\LevelException.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\server\UDPServerSocket.ts" />
+    <TypeScriptCompile Include="typings\node\node.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="pocketmine" />
+    <Folder Include="pocketmine\block" />
+    <Folder Include="pocketmine\command" />
+    <Folder Include="pocketmine\level" />
+    <Folder Include="pocketmine\math" />
+    <Folder Include="pocketmine\permission" />
+    <Folder Include="pocketmine\raklib" />
+    <Folder Include="pocketmine\raklib\protocol\" />
+    <Folder Include="pocketmine\raklib\server" />
+    <Folder Include="pocketmine\spl" />
+    <Folder Include="pocketmine\utils" />
+    <Folder Include="typings" />
+    <Folder Include="typings\node" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -2,8 +2,7 @@
  * Created by edoardo on 16/02/2015.
  */
 
-module RakLib {
-    export class RakLib {
+export class RakLib {
         public static VERSION:string = '0.7.0'; // TODO wich version?
         public static PROTOCOL:number = 5;
         public static MAGIC:string = "\x00\xff\xff\x00\xfe\xfe\xfe\xfe\xfd\xfd\xfd\xfd\x12\x34\x56\x78";
@@ -137,4 +136,3 @@ module RakLib {
             return 0x7f;
         }
     }
-}
