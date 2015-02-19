@@ -11,6 +11,12 @@ export class Packet {
     public buffer: Buffer;
     public sendTime: Date;
 
+    protected getAll(): Buffer {
+        var buf = new Buffer(this.buffer.length - this.offset);
+        this.buffer.copy(buf, 0, this.offset);
+        return buf;
+    }
+
     protected get(len: number): Buffer {
         if (len < 0) {
             this.offset = this.buffer.length - 1;
