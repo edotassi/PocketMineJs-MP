@@ -44,7 +44,13 @@
     <TypeScriptCompile Include="pocketmine\raklib\protocol\DATA_PACKET_9.ts" />
     <TypeScriptCompile Include="pocketmine\raklib\protocol\DATA_PACKET_A.ts" />
     <TypeScriptCompile Include="pocketmine\raklib\protocol\DATA_PACKET_B.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\DATA_PACKET_C.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\DATA_PACKET_D.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\DATA_PACKET_E.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\DATA_PACKET_F.ts" />
     <TypeScriptCompile Include="pocketmine\raklib\protocol\EncapsulatedPacket.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\NACK.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\protocol\OPEN_CONNECTION_REPLY_1.ts" />
     <TypeScriptCompile Include="pocketmine\raklib\protocol\Packet.ts" />
     <TypeScriptCompile Include="pocketmine\raklib\protocol\UNCONNECTED_PONG.ts" />
     <TypeScriptCompile Include="pocketmine\raklib\server\RakLibServer.ts" />
