@@ -55,6 +55,7 @@
     <TypeScriptCompile Include="pocketmine\raklib\protocol\UNCONNECTED_PONG.ts" />
     <TypeScriptCompile Include="pocketmine\raklib\server\RakLibServer.ts" />
     <TypeScriptCompile Include="pocketmine\raklib\server\ServerHandler.ts" />
+    <TypeScriptCompile Include="pocketmine\raklib\server\Session.ts" />
     <TypeScriptCompile Include="pocketmine\raklib\server\SessionManager.ts" />
     <TypeScriptCompile Include="typings\misc.d.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />

@@ -8,3 +8,7 @@ interface BufferPack {
     unpack(format: string, buffer: Buffer, position: number): Array<number>;
     pack(format: string, value: Array<number>): Buffer;
 }
+
+interface HashTable<T> {
+    [key: number]: T;
+}

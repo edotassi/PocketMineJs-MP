@@ -9,7 +9,7 @@ export class Packet {
     protected offset: number = 0;
 
     public buffer: Buffer;
-    public sendTime: Date;
+    public sendTime: number;
 
     protected getAll(): Buffer {
         var buf = new Buffer(this.buffer.length - this.offset);
@@ -87,7 +87,7 @@ export class Packet {
 
     public putLTriad(v: number) {
         this.buffer = Buffer.concat([this.buffer, rakLib.Binary.writeLTriad(v)]);
-    };
+    }
 
     public putByte(v: number): void {
         this.buffer = Buffer.concat([this.buffer, rakLib.Binary.writeByte(v)]);

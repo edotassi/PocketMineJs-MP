@@ -31,7 +31,7 @@ var OPEN_CONNECTION_REPLY_1 = (function (_super) {
         this.offset += 16;
         this.serverID = this.getLong();
         this.getByte();
-        this.mtuSize = this.getByte();
+        this.mtuSize = this.getShort(false);
     };
     return OPEN_CONNECTION_REPLY_1;
 })(protocol.Packet);

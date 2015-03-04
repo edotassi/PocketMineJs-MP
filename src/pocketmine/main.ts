@@ -7,7 +7,7 @@
 console.log("Starting");
 console.log(__dirname);
 
-
+import udpServer = require("raklib/server/UDPServerSocket");
 
 var s = new udpServer.UdpServerSocket(packetReceived, null);
 console.log("Server started");

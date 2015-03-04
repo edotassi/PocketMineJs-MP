@@ -10,6 +10,11 @@ var Packet = (function () {
         enumerable: true,
         configurable: true
     });
+    Packet.prototype.getAll = function () {
+        var buf = new Buffer(this.buffer.length - this.offset);
+        this.buffer.copy(buf, 0, this.offset);
+        return buf;
+    };
     Packet.prototype.get = function (len) {
         if (len < 0) {
             this.offset = this.buffer.length - 1;
@@ -63,6 +68,7 @@ var Packet = (function () {
         this.buffer = Buffer.concat([this.buffer, rakLib.Binary.writeTriad(v)]);
     };
     Packet.prototype.putLTriad = function (v) {
+        this.buffer = Buffer.concat([this.buffer, rakLib.Binary.writeLTriad(v)]);
     };
     Packet.prototype.putByte = function (v) {
         this.buffer = Buffer.concat([this.buffer, rakLib.Binary.writeByte(v)]);

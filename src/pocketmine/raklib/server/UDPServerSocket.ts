@@ -6,11 +6,12 @@
 /// <reference path="../../../typings/node/node.d.ts"/>
 
 import dgram = require("dgram");
+import sql = require("../../spl/ThreadedLogger");
 
 export class UdpServerSocket {
     private socket: dgram.Socket;
 
-    constructor(onPacket: (buffer:Buffer, info:dgram.RemoteInfo) => void, logger: Spl.ThreadedLogger, port: number = 19132, interface: string = "0.0.0.0") {
+    constructor(onPacket: (buffer:Buffer, info:dgram.RemoteInfo) => void, logger: sql.ThreadedLogger, port: number = 19132, interface: string = "0.0.0.0") {
         this.socket = dgram.createSocket("udp4");
 
         this.socket.bind(port, interface,() => {

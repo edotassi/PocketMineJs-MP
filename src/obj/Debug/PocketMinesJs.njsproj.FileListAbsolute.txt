@@ -1,1 +1,3 @@
 D:\Sorgenti\PocketMineJs-MP\src\bin\Microsoft.NodejsTools.WebRole.dll
+W:\PocketMineJs-MP\src\obj\Debug\PocketMinesJs.njsprojResolveAssemblyReference.cache
+W:\PocketMineJs-MP\src\bin\Microsoft.NodejsTools.WebRole.dll
